@@ -1,0 +1,35 @@
+.event-details {
+  padding: 28px 0;
+  background-color: var(--color-bg-alt);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.event-details-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.event-detail {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.event-detail-icon {
+  color: var(--color-accent);
+  flex-shrink: 0;
+}
+
+.event-detail-label {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+.event-detail-value {
+  font-size: 0.9rem;
+  color: var(--color-cream);
+  font-weight: 500;
+}

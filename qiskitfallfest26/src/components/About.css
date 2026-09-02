@@ -1,0 +1,67 @@
+.about {
+  padding: 60px 0;
+  background-color: var(--color-bg-alt);
+}
+
+.about-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.about-desc {
+  color: var(--color-text-muted);
+  max-width: 640px;
+}
+
+.about-points {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.about-point {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  flex: 1;
+  min-width: 140px;
+  padding: 0 12px;
+}
+
+.about-point-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--color-accent);
+  color: var(--color-cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-point p {
+  font-size: 0.9rem;
+  color: var(--color-text);
+  max-width: 150px;
+}
+
+.about-divider {
+  display: block;
+  position: absolute;
+  right: -12px;
+  top: 24px;
+  width: 1px;
+  height: 60px;
+  background-color: var(--color-border);
+}
+
+@media (max-width: 860px) {
+  .about-divider {
+    display: none;
+  }
+}

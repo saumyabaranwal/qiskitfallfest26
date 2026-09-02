@@ -1,0 +1,63 @@
+.register {
+  padding: 60px 0;
+  background-color: var(--color-green);
+}
+
+.register-eyebrow {
+  color: #d7e8b8;
+}
+
+.register-heading {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  color: var(--color-cream);
+  margin-bottom: 8px;
+}
+
+.register-subtext {
+  color: #cfe0b8;
+  margin-bottom: 28px;
+}
+
+.register-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  grid-template-areas:
+    "name email submit"
+    "college college submit";
+  gap: 14px;
+  max-width: 760px;
+}
+
+.register-form input:nth-child(1) { grid-area: name; }
+.register-form input:nth-child(2) { grid-area: email; }
+.register-form input:nth-child(3) { grid-area: college; }
+.register-form button { grid-area: submit; }
+
+.register-form input {
+  background-color: var(--color-cream);
+  border: none;
+  border-radius: 6px;
+  padding: 12px 14px;
+  font-size: 0.9rem;
+  color: #2b2b2b;
+}
+
+.register-form input::placeholder {
+  color: #7a7a6f;
+}
+
+.register-form button {
+  padding: 0 28px;
+}
+
+@media (max-width: 700px) {
+  .register-form {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "name"
+      "email"
+      "college"
+      "submit";
+  }
+}

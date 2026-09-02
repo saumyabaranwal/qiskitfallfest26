@@ -1,0 +1,97 @@
+{
+  "eventName": "Qiskit Fall Fest 2026",
+  "tagline": "Explore. Build. Quantum.",
+  "heroDescription": "A global celebration of quantum computing and the incredible community building the future. Join workshops, talks, hackathons and more!",
+  "nav": [
+    { "label": "About", "href": "#about" },
+    { "label": "Schedule", "href": "#schedule" },
+    { "label": "Workshops", "href": "#workshops" },
+    { "label": "Register", "href": "#register" }
+  ],
+  "about": {
+    "eyebrow": "ABOUT QFF",
+    "heading": "What is Qiskit Fall Fest?",
+    "description": "Qiskit Fall Fest is an annual celebration of quantum computing and the community building it forward. Expect inspiring talks, hands-on workshops, hackathons, and plenty of opportunities to learn, build and connect.",
+    "points": [
+      { "icon": "user", "text": "Learn from experts" },
+      { "icon": "code", "text": "Build with Qiskit" },
+      { "icon": "cpu", "text": "Experience real quantum systems" },
+      { "icon": "users", "text": "Connect with a global quantum community" }
+    ]
+  },
+  "highlights": {
+    "eyebrow": "WHY JOIN?",
+    "heading": "Key Highlights",
+    "items": [
+      { "icon": "flask-conical", "title": "Hands-on Learning", "desc": "Explore quantum concepts by building and testing real results." },
+      { "icon": "mic", "title": "Workshops & Talks", "desc": "Interactive sessions and talks from experts and industry leaders." },
+      { "icon": "laptop", "title": "Quantum Experience", "desc": "Access real quantum hardware and cloud platforms." },
+      { "icon": "users-round", "title": "Community & Networking", "desc": "Meet like-minded people and collaborate on exciting ideas." }
+    ]
+  },
+  "eventDetails": [
+    { "icon": "calendar", "label": "Dates", "value": "10 – 12 October, 2026" },
+    { "icon": "map-pin", "label": "Venue", "value": "JIIT Noida, India" },
+    { "icon": "laptop-2", "label": "Mode", "value": "Hybrid" },
+    { "icon": "users", "label": "Participants", "value": "Open to all" },
+    { "icon": "ticket", "label": "Entry", "value": "Free (Registration Mandatory)" }
+  ],
+  "schedule": {
+    "eyebrow": "SCHEDULE",
+    "heading": "Event Timeline",
+    "days": [
+      {
+        "label": "Day 1",
+        "date": "10 Oct",
+        "events": [
+          { "time": "09:30 AM - 10:30 AM", "title": "Inauguration & Keynote" },
+          { "time": "10:45 AM - 12:30 PM", "title": "Expert Talk" },
+          { "time": "02:00 PM - 04:00 PM", "title": "Workshops & Hands-on" },
+          { "time": "05:30 PM - 06:30 PM", "title": "Networking Session" }
+        ]
+      },
+      {
+        "label": "Day 2",
+        "date": "11 Oct",
+        "events": [
+          { "time": "10:00 AM - 02:00 PM", "title": "Workshops" },
+          { "time": "03:00 PM - 06:00 PM", "title": "Hackathon" },
+          { "time": "05:30 PM - 06:00 PM", "title": "Lightning Talks" }
+        ]
+      },
+      {
+        "label": "Day 3",
+        "date": "12 Oct",
+        "events": [
+          { "time": "10:30 AM - 01:00 PM", "title": "Hackathon Final Round" },
+          { "time": "02:00 PM - 04:00 PM", "title": "Project Showcase" },
+          { "time": "04:30 PM - 05:00 PM", "title": "Closing & Prizes" }
+        ]
+      }
+    ]
+  },
+  "workshops": {
+    "eyebrow": "WORKSHOPS & SESSIONS",
+    "heading": "Workshops You Can't Miss",
+    "items": [
+      { "title": "Quantum Computing with Qiskit", "desc": "Get started with quantum programming using Qiskit.", "icon": "atom" },
+      { "title": "Qiskit Algorithms Hands-on", "desc": "Implement and experiment with popular algorithms.", "icon": "git-branch" },
+      { "title": "Quantum Hardware Lab", "desc": "Run circuits on real quantum systems via the cloud.", "icon": "server" },
+      { "title": "Build Your Own Project", "desc": "Apply your skills in a guided project session.", "icon": "database" }
+    ]
+  },
+  "register": {
+    "eyebrow": "REGISTER NOW",
+    "heading": "Be a Part of QFF 2026!",
+    "subtext": "Register now to secure your spot."
+  },
+  "footer": {
+    "copyright": "© 2026 Qiskit Fall Fest. All rights reserved.",
+    "madeWith": "Made with love by the Qiskit Community",
+    "social": [
+      { "platform": "instagram", "href": "#" },
+      { "platform": "linkedin", "href": "#" },
+      { "platform": "youtube", "href": "#" }
+    ]
+  }
+}
