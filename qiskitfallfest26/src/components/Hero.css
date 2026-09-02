@@ -1,16 +1,22 @@
 .hero {
-  padding: 80px 0 60px;
+  padding: 80px 0 24px;
   overflow: hidden;
   position: relative;
 }
 
 .hero-inner {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 40px;
-  align-items: center;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 25px;
+  align-items: end;
 }
 
+/* =========================
+   CONTENT
+========================= */
+.hero-content{
+  min-width: 0;
+}
 .hero-title {
   font-family: var(--font-display);
   font-size: 3.2rem;
@@ -36,75 +42,214 @@
 .hero-actions {
   display: flex;
   gap: 16px;
+  flex-wrap: wrap;
 }
 
-.hero-art {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  min-height: 320px;
-}
+/* =========================
+   HERO IMAGE
+========================= */
 
-.hero-seal {
+.hero-image {
   position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-end;
+  overflow: visible;
 }
 
-.hero-seal-ring {
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  background-color: var(--color-accent);
-  border: 4px dashed var(--color-bg);
-  outline: 6px solid var(--color-accent-dark);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 4px;
-  color: var(--color-maroon);
-  font-family: var(--font-display);
-  font-weight: 700;
-  transform: rotate(-4deg);
+.hero-image img {
+  width: 750px;
+  max-width: none;
+  height: auto;
+  display: block;
+
+
+  /* subtle floating animation */
+  animation: heroFloat 3s ease-in-out infinite;
+}
+.hero-actions .btn {
+  white-space: nowrap;
+  min-width: 170px;
+  text-align: center;
 }
 
-.hero-seal-year {
-  font-size: 0.75rem;
-  letter-spacing: 0.08em;
+/* =========================
+   SUBTLE FLOAT
+========================= */
+
+@keyframes heroFloat {
+  0%,
+  100% {
+    transform: translateX(70px) translateY(0);
+  }
+
+  50% {
+    transform: translateX(70px) translateY(-8px);
+  }
 }
 
-.hero-seal-title {
-  font-size: 1.1rem;
-  letter-spacing: 0.05em;
+
+/* =========================
+   LUCIDE ATOM
+========================= */
+
+.hero-atom {
+  position: absolute;
+  left: 12%;
+  top: 22%;
+
+  color: #f59e0b;
+  opacity: 0.8;
+
+  animation: atomFloat 4s ease-in-out infinite;
 }
 
-.hero-seal-stand {
-  width: 40px;
-  height: 90px;
-  background-color: var(--color-maroon);
-  margin-top: -10px;
-  border-radius: 0 0 6px 6px;
+@keyframes atomFloat {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-6px) rotate(8deg);
+  }
 }
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1100px) {
+  .hero-inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .hero-image img {
+    width: 650px;
+  }
+
+  @keyframes heroFloat {
+    0%,
+    100% {
+      transform: translateX(40px) translateY(0);
+    }
+
+    50% {
+      transform: translateX(40px) translateY(-7px);
+    }
+  }
+
+  .hero-title {
+    font-size: 2.8rem;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
 
 @media (max-width: 900px) {
+
+  .hero {
+    padding: 50px 20px 40px;
+  }
+
   .hero-inner {
     grid-template-columns: 1fr;
+    gap: 40px;
     text-align: center;
+    align-items: center;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+    line-height: 1.1;
+  }
+
+  .hero-tagline {
+    font-size: 1.1rem;
   }
 
   .hero-desc {
+    max-width: 500px;
     margin-left: auto;
     margin-right: auto;
   }
 
   .hero-actions {
     justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hero-image {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-image img {
+    width: 100%;
+    max-width: 650px;
+    transform: none;
+    animation: heroFloatMobile 5s ease-in-out infinite;
+  }
+
+  .hero-atom {
+    left: 8%;
+    top: 15%;
+  }
+}
+
+
+@keyframes heroFloatMobile {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+/* =========================
+   SMALL PHONES
+========================= */
+@media (max-width: 500px) {
+
+  .hero {
+    padding: 35px 16px 30px;
+  }
+
+  .hero-inner {
+    gap: 30px;
   }
 
   .hero-title {
-    font-size: 2.4rem;
+    font-size: 2rem;
+  }
+
+  .hero-tagline {
+    font-size: 1rem;
+  }
+
+  .hero-desc {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .hero-actions {
+    gap: 10px;
+  }
+
+  .hero-image img {
+    width: 110%;
+    max-width: none;
+  }
+
+  .hero-atom {
+    display: none;
   }
 }
