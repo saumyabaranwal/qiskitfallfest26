@@ -1,8 +1,14 @@
 .register {
-  padding: 60px 0;
+  padding: 80px 0;
   background-color: var(--color-green);
 }
 
+.register-inner {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr; /* was 1.1fr 0.9fr — flip the balance toward the image */
+  gap: 32px;
+  align-items: center;
+}
 .register-eyebrow {
   color: #d7e8b8;
 }
@@ -19,45 +25,111 @@
   margin-bottom: 28px;
 }
 
-.register-form {
-  display: grid;
-  grid-template-columns: 1fr 1fr auto;
-  grid-template-areas:
-    "name email submit"
-    "college college submit";
-  gap: 14px;
-  max-width: 760px;
+.register-card {
+  background-color: rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 36px 40px;
+  max-width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.register-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+  border-color: rgba(244, 162, 89, 0.35); /* accent glow, matches perk icon color */
 }
 
-.register-form input:nth-child(1) { grid-area: name; }
-.register-form input:nth-child(2) { grid-area: email; }
-.register-form input:nth-child(3) { grid-area: college; }
-.register-form button { grid-area: submit; }
+.register-price {
+  font-family: var(--font-display);
+  font-size: 2.6rem;
+  color: var(--color-cream);
+  margin-bottom: 4px;
+}
 
-.register-form input {
-  background-color: var(--color-cream);
-  border: none;
-  border-radius: 6px;
-  padding: 12px 14px;
+.register-price-note {
+  color: #cfe0b8;
   font-size: 0.9rem;
-  color: #2b2b2b;
+  margin-bottom: 20px;
 }
 
-.register-form input::placeholder {
-  color: #7a7a6f;
+.register-perks {
+  list-style: none;
+  margin: 0 0 28px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
-.register-form button {
-  padding: 0 28px;
+.register-perks li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--color-cream);
+  font-size: 1.05rem;
 }
 
-@media (max-width: 700px) {
-  .register-form {
+.register-perk-icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  display: inline-flex;
+  color: #f4a259; /* accent tone, tweak to match your palette */
+}
+
+.register-perk-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.register-btn {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding: 14px 28px;
+  text-decoration: none;
+}
+
+.register-media {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.register-media img {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  transform: scale(1.25); /* crops into the asset's own empty margin */
+  animation: register-float 4s ease-in-out infinite;
+  transition: transform 0.4s ease;
+}
+
+.register-media img:hover {
+  transform: scale(1.3); /* slightly more than the base 1.25 so the hover still reads */
+  animation-play-state: paused;
+}
+
+@keyframes register-float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@media (max-width: 900px) {
+  .register-inner {
     grid-template-columns: 1fr;
-    grid-template-areas:
-      "name"
-      "email"
-      "college"
-      "submit";
+  }
+
+  .register-media {
+    order: -1;
+  }
+
+  .register-card {
+    max-width: 100%;
   }
 }
