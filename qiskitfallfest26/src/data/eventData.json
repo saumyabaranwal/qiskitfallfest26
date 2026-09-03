@@ -1,6 +1,6 @@
 {
   "eventName": "Qiskit Fall Fest 2026",
-  "tagline": "~ A decade of quantum on the cloud ~",
+  "tagline": "A decade of quantum on the cloud",
   "heroDescription": "A global celebration of quantum computing and the incredible community building the future. Join workshops, talks, hackathons and more!",
   "nav": [
     { "label": "About", "href": "#about" },
