@@ -30,9 +30,9 @@
     ]
   },
   "eventDetails": [
-    { "icon": "calendar", "label": "Dates", "value": "10 – 12 October, 2026" },
+    { "icon": "calendar", "label": "Dates", "value": "October 2026" },
     { "icon": "map-pin", "label": "Venue", "value": "JIIT Noida, India" },
-    { "icon": "laptop-2", "label": "Mode", "value": "Hybrid" },
+    { "icon": "laptop-2", "label": "Mode", "value": "In-person" },
     { "icon": "users", "label": "Participants", "value": "Open to all" },
     { "icon": "ticket", "label": "Entry", "value": "Free (Registration Mandatory)" }
   ],
