@@ -1,7 +1,6 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
-import Highlights from './components/Highlights'
 import EventDetails from './components/EventDetails'
 import Schedule from './components/Schedule'
 import Workshops from './components/Workshops'
@@ -14,8 +13,7 @@ function App() {
     <>
       <Navbar data={eventData} />
       <Hero data={eventData} />
-      <About data={eventData.about} />
-      <Highlights data={eventData.highlights} />
+      <About data={eventData.about} highlightsData={eventData.highlights} />
       <EventDetails data={eventData.eventDetails} />
       <Schedule data={eventData.schedule} />
       <Workshops data={eventData.workshops} />
