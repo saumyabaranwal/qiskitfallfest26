@@ -20,7 +20,7 @@ function App() {
       <Schedule data={eventData.schedule} />
       <Workshops data={eventData.workshops} />
       <Register data={eventData.register} />
-      <Footer data={eventData.footer} eventName={eventData.eventName} />
+      <Footer data={eventData.footer}/>
     </>
   )
 }

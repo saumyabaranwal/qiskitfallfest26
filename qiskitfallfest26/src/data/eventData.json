@@ -63,6 +63,7 @@
     "subtext": "Register now to secure your spot."
   },
   "footer": {
+    "title" : "Qiskit Fall Fest 2026 @JIIT Noida",
     "copyright": "© 2026 IBM Qiskit Fall Fest. All rights reserved.",
     "madeWith": "Made with love by the Qiskit Community"
   }

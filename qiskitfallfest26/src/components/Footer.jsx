@@ -47,15 +47,15 @@ function useTypewriter(text, { typeSpeed = 80, deleteSpeed = 40, pauseAfterType 
   return displayed
 }
 
-function Footer({ data, eventName }) {
-  const typed = useTypewriter(eventName, { typeSpeed: 90, pauseAfterType: 2000 })
+function Footer({ data}) {
+  const typed = useTypewriter(data.title, { typeSpeed: 90, pauseAfterType: 2000 })
 
   return (
     <footer className="footer">
       <div className="container footer-inner">
         <div className="footer-top">
           <div className="footer-brand">
-            <img src={logo} alt={`${eventName} logo`} className="footer-logo" />
+            <img src={logo} alt={`${data.title} logo`} className="footer-logo" />
             <h3 className="footer-title">
               {typed}
               <span className="footer-cursor" />
