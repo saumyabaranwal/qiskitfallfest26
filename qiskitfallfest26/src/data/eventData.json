@@ -1,6 +1,6 @@
 {
   "eventName": "Qiskit Fall Fest 2026",
-  "tagline": "Explore. Build. Quantum.",
+  "tagline": "~ A decade of quantum on the cloud ~",
   "heroDescription": "A global celebration of quantum computing and the incredible community building the future. Join workshops, talks, hackathons and more!",
   "nav": [
     { "label": "About", "href": "#about" },
@@ -40,8 +40,8 @@
   "eyebrow": "SCHEDULE",
   "heading": "Event Timeline",
   "slots": [
-    { "time": "09:00 AM", "title": "TBA" },
-    { "time": "10:30 AM", "title": "TBA" },
+    { "time": "09:00 AM", "title": "TBD" },
+    { "time": "10:30 AM", "title": "TBD" },
     { "time": "01:00 PM", "title": "TBD" },
     { "time": "02:00 PM", "title": "TBD" },
     { "time": "03:00 PM", "title": "TBD" },
@@ -63,12 +63,7 @@
     "subtext": "Register now to secure your spot."
   },
   "footer": {
-    "copyright": "© 2026 Qiskit Fall Fest. All rights reserved.",
-    "madeWith": "Made with love by the Qiskit Community",
-    "social": [
-      { "platform": "instagram", "href": "#" },
-      { "platform": "linkedin", "href": "#" },
-      { "platform": "youtube", "href": "#" }
-    ]
+    "copyright": "© 2026 IBM Qiskit Fall Fest. All rights reserved.",
+    "madeWith": "Made with love by the Qiskit Community"
   }
 }
