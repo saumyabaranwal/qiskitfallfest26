@@ -13,3 +13,18 @@
   color: var(--color-text-muted);
   max-width: 640px;
 }
+.about-text {
+  animation: aboutFadeUp 0.7s ease-out both;
+}
+
+@keyframes aboutFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

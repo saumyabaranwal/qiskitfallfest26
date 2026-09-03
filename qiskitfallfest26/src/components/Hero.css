@@ -24,6 +24,8 @@
   color: var(--color-cream);
   line-height: 1.1;
   margin-bottom: 20px;
+  animation: heroFadeUp 0.6s ease-out both;
+  animation-delay: 0.15s;
 }
 
 .hero-tagline {
@@ -31,18 +33,24 @@
   font-weight: 600;
   font-size: 1.15rem;
   margin-bottom: 16px;
+  animation: heroFadeUp 0.6s ease-out both;
+  animation-delay: 0.05s;
 }
 
 .hero-desc {
   color: var(--color-text-muted);
   max-width: 480px;
   margin-bottom: 30px;
+  animation: heroFadeUp 0.6s ease-out both;
+  animation-delay: 0.25s;
 }
 
 .hero-actions {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
+  animation: heroFadeUp 0.6s ease-out both;
+  animation-delay: 0.35s;
 }
 
 /* =========================
@@ -55,6 +63,9 @@
   justify-content: flex-end;
   align-items: flex-end;
   overflow: visible;
+  animation: heroImageIn 0.8s ease-out both;
+  animation-delay: 0.15s;
+
 }
 
 .hero-image img {
@@ -211,6 +222,29 @@
 
   50% {
     transform: translateY(-6px);
+  }
+}
+@keyframes heroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroImageIn {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 

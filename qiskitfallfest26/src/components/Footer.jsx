@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Mail, MapPin } from 'lucide-react'
-import logo from '../assets/logo.png'
+import logo from '../assets/qiskit_logo.png'
 import './Footer.css'
 
 function useTypewriter(text, { typeSpeed = 80, deleteSpeed = 40, pauseAfterType = 1500, pauseAfterDelete = 500 } = {}) {

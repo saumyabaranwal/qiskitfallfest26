@@ -9,6 +9,50 @@
   border: 1px solid var(--color-border);
   border-radius: 10px;
   padding: 28px 22px;
+
+  /* Entrance animation */
+  animation: highlightFadeUp 0.6s ease-out both;
+
+  /* Hover transition */
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.highlight-card:nth-child(1) {
+  animation-delay: 0.05s;
+}
+
+.highlight-card:nth-child(2) {
+  animation-delay: 0.15s;
+}
+
+.highlight-card:nth-child(3) {
+  animation-delay: 0.25s;
+}
+
+.highlight-card:nth-child(4) {
+  animation-delay: 0.35s;
+}
+
+@keyframes highlightFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Card hover */
+.highlight-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--color-accent);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
 }
 
 .highlight-icon {
@@ -21,6 +65,16 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 18px;
+
+  /* Icon transition */
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.highlight-card:hover .highlight-icon {
+  transform: translateY(-2px) scale(1.05);
+  background-color: rgba(226, 114, 74, 0.22);
 }
 
 .highlight-card h3 {
