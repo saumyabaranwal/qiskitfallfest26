@@ -16,6 +16,18 @@
 
 .navbar-logo {
   display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-logo-icon {
+  height: 38px;
+  width: 38px;
+  object-fit: contain;
+}
+
+.navbar-logo-text {
+  display: flex;
   flex-direction: column;
   line-height: 1.1;
 }
@@ -50,11 +62,6 @@
   color: var(--color-accent);
 }
 
-.navbar-cta {
-  padding: 10px 20px;
-  font-size: 0.85rem;
-}
-
 .navbar-toggle {
   display: none;
   background: none;
@@ -81,10 +88,6 @@
   .navbar-links a {
     padding: 14px 24px;
     border-bottom: 1px solid var(--color-border);
-  }
-
-  .navbar-cta {
-    display: none;
   }
 
   .navbar-toggle {
