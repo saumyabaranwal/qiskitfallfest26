@@ -36,40 +36,18 @@
     { "icon": "users", "label": "Participants", "value": "Open to all" },
     { "icon": "ticket", "label": "Entry", "value": "Free (Registration Mandatory)" }
   ],
-  "schedule": {
-    "eyebrow": "SCHEDULE",
-    "heading": "Event Timeline",
-    "days": [
-      {
-        "label": "Day 1",
-        "date": "10 Oct",
-        "events": [
-          { "time": "09:30 AM - 10:30 AM", "title": "Inauguration & Keynote" },
-          { "time": "10:45 AM - 12:30 PM", "title": "Expert Talk" },
-          { "time": "02:00 PM - 04:00 PM", "title": "Workshops & Hands-on" },
-          { "time": "05:30 PM - 06:30 PM", "title": "Networking Session" }
-        ]
-      },
-      {
-        "label": "Day 2",
-        "date": "11 Oct",
-        "events": [
-          { "time": "10:00 AM - 02:00 PM", "title": "Workshops" },
-          { "time": "03:00 PM - 06:00 PM", "title": "Hackathon" },
-          { "time": "05:30 PM - 06:00 PM", "title": "Lightning Talks" }
-        ]
-      },
-      {
-        "label": "Day 3",
-        "date": "12 Oct",
-        "events": [
-          { "time": "10:30 AM - 01:00 PM", "title": "Hackathon Final Round" },
-          { "time": "02:00 PM - 04:00 PM", "title": "Project Showcase" },
-          { "time": "04:30 PM - 05:00 PM", "title": "Closing & Prizes" }
-        ]
-      }
-    ]
-  },
+"schedule": {
+  "eyebrow": "SCHEDULE",
+  "heading": "Event Timeline",
+  "slots": [
+    { "time": "09:00 AM", "title": "TBA" },
+    { "time": "10:30 AM", "title": "TBA" },
+    { "time": "01:00 PM", "title": "TBD" },
+    { "time": "02:00 PM", "title": "TBD" },
+    { "time": "03:00 PM", "title": "TBD" },
+    { "time": "05:30 PM", "title": "TBD" }
+  ]
+},
   "workshops": {
     "eyebrow": "WORKSHOPS & SESSIONS",
     "heading": "Workshops You Can't Miss",
