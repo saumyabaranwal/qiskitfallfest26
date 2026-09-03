@@ -26,6 +26,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 88px;
 }
 
 body {
@@ -63,7 +64,7 @@ img {
 
 .section-eyebrow {
   color: var(--color-accent);
-  font-size: 0.8rem;
+  font-size: 1.05rem;
   font-weight: 600;
   letter-spacing: 0.04em;
   margin-bottom: 10px;

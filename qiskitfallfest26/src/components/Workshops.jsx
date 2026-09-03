@@ -1,11 +1,10 @@
-import { Atom, GitBranch, Server, Database } from 'lucide-react'
 import './Workshops.css'
 
-const icons = {
-  atom: Atom,
-  'git-branch': GitBranch,
-  server: Server,
-  database: Database,
+const difficultyColors = {
+  Beginner: '#7cc576',
+  Intermediate: '#e2724a',
+  Advanced: '#e2574a',
+  'All Levels': '#8ea9c9',
 }
 
 function Workshops({ data }) {
@@ -16,13 +15,15 @@ function Workshops({ data }) {
         <h2 className="section-heading">{data.heading}</h2>
 
         <div className="workshops-grid">
-          {data.items.map((item) => {
-            const Icon = icons[item.icon]
+          {data.items.map((item, i) => {
+            const color = difficultyColors[item.difficulty] || 'var(--color-accent)'
             return (
-              <div className="workshop-card" key={item.title}>
-                <div className="workshop-icon">
-                  <Icon size={24} />
-                </div>
+              <div
+                key={item.title + i}
+                className="workshop-card"
+                style={{ '--diff-color': color }}
+              >
+                <span className="workshop-difficulty">{item.difficulty}</span>
                 <h3>{item.title}</h3>
                 <p>{item.desc}</p>
               </div>

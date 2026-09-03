@@ -9,53 +9,47 @@
     { "label": "Register", "href": "#register" }
   ],
   "about": {
-    "eyebrow": "ABOUT QFF",
+    "eyebrow": "About",
     "heading": "What is Qiskit Fall Fest?",
-    "description": "Qiskit Fall Fest is an annual celebration of quantum computing and the community building it forward. Expect inspiring talks, hands-on workshops, hackathons, and plenty of opportunities to learn, build and connect.",
-    "points": [
-      { "icon": "user", "text": "Learn from experts" },
-      { "icon": "code", "text": "Build with Qiskit" },
-      { "icon": "cpu", "text": "Experience real quantum systems" },
-      { "icon": "users", "text": "Connect with a global quantum community" }
-    ]
+    "description": "Qiskit Fall Fest is an annual celebration of quantum computing and the community building it forward. Expect inspiring talks, hands-on workshops, hackathons, and plenty of opportunities to learn, build and connect."
   },
   "highlights": {
-    "eyebrow": "WHY JOIN?",
-    "heading": "Key Highlights",
     "items": [
       { "icon": "flask-conical", "title": "Hands-on Learning", "desc": "Explore quantum concepts by building and testing real results." },
       { "icon": "mic", "title": "Workshops & Talks", "desc": "Interactive sessions and talks from experts and industry leaders." },
-      { "icon": "laptop", "title": "Quantum Experience", "desc": "Access real quantum hardware and cloud platforms." },
+      { "icon": "laptop", "title": "Quantum Experience", "desc": "Experience IBM's actual quantum computers." },
       { "icon": "users-round", "title": "Community & Networking", "desc": "Meet like-minded people and collaborate on exciting ideas." }
     ]
   },
   "eventDetails": [
-    { "icon": "calendar", "label": "Dates", "value": "October 2026" },
+    { "icon": "calendar", "label": "Dates", "value": "TBD" },
     { "icon": "map-pin", "label": "Venue", "value": "JIIT Noida, India" },
     { "icon": "laptop-2", "label": "Mode", "value": "In-person" },
     { "icon": "users", "label": "Participants", "value": "Open to all" },
     { "icon": "ticket", "label": "Entry", "value": "Free (Registration Mandatory)" }
   ],
-"schedule": {
-  "eyebrow": "SCHEDULE",
-  "heading": "Event Timeline",
-  "slots": [
-    { "time": "09:00 AM", "title": "TBD" },
-    { "time": "10:30 AM", "title": "TBD" },
-    { "time": "01:00 PM", "title": "TBD" },
-    { "time": "02:00 PM", "title": "TBD" },
-    { "time": "03:00 PM", "title": "TBD" },
-    { "time": "05:30 PM", "title": "TBD" }
-  ]
-},
+  "schedule": {
+    "eyebrow": "SCHEDULE",
+    "heading": "Event Timeline",
+    "slots": [
+      { "time": "09:00 AM", "title": "TBD" },
+      { "time": "10:30 AM", "title": "TBD" },
+      { "time": "01:00 PM", "title": "TBD" },
+      { "time": "02:00 PM", "title": "TBD" },
+      { "time": "03:00 PM", "title": "TBD" },
+      { "time": "05:30 PM", "title": "TBD" }
+    ]
+  },
   "workshops": {
     "eyebrow": "WORKSHOPS & SESSIONS",
     "heading": "Workshops You Can't Miss",
     "items": [
-      { "title": "Quantum Computing with Qiskit", "desc": "Get started with quantum programming using Qiskit.", "icon": "atom" },
-      { "title": "Qiskit Algorithms Hands-on", "desc": "Implement and experiment with popular algorithms.", "icon": "git-branch" },
-      { "title": "Quantum Hardware Lab", "desc": "Run circuits on real quantum systems via the cloud.", "icon": "server" },
-      { "title": "Build Your Own Project", "desc": "Apply your skills in a guided project session.", "icon": "database" }
+      { "title": "Quantum Computing Fundamentals", "difficulty": "Beginner", "desc": "Learn the basics of qubits, superposition, and entanglement with hands-on exercises." },
+      { "title": "Qiskit Programming Workshop", "difficulty": "Intermediate", "desc": "Dive deep into Qiskit programming with practical examples and real quantum hardware access." },
+      { "title": "Quantum Machine Learning", "difficulty": "Intermediate", "desc": "Discover how quantum computing can enhance machine learning algorithms and applications." },
+      { "title": "Quantum Algorithms Deep Dive", "difficulty": "Advanced", "desc": "Explore advanced algorithms like Shor's and Grover's with implementation guidance." },
+      { "title": "Quantum Hardware Lab", "difficulty": "All Levels", "desc": "Get hands-on experience with real quantum processors and learn about hardware limitations." },
+      { "title": "Research Frontiers Panel", "difficulty": "All Levels", "desc": "Join leading researchers discussing the latest breakthroughs in quantum computing." }
     ]
   },
   "register": {
