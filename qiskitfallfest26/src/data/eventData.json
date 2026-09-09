@@ -35,7 +35,7 @@
     {
       "id": "day1",
       "label": "Day 1",
-      "date": "23 Oct",
+      "date": "23 Oct (Offline)",
       "theme": "Discover",
       "sessions": [
         { "time": "10:00 AM", "title": "Registration & Networking" },
@@ -49,7 +49,7 @@
     {
       "id": "day2",
       "label": "Day 2",
-      "date": "24 Oct",
+      "date": "24 Oct (Offline)",
       "theme": "Build",
       "sessions": [
         { "time": "10:00 AM", "title": "Quantum Recap" },
@@ -62,7 +62,7 @@
     {
       "id": "day3",
       "label": "Day 3",
-      "date": "25 Oct",
+      "date": "25 Oct (Online)",
       "theme": "Ideate",
       "sessions": [
         { "time": "10:00 AM", "title": "Mini-Project Build & Experiment" },
@@ -77,7 +77,7 @@
     {
       "id": "day4",
       "label": "Day 4",
-      "date": "26 Oct",
+      "date": "26 Oct (Offline)",
       "theme": "Hack & Showcase",
       "sessions": [
         { "time": "10:00 AM", "title": "Open Hackathon Build" },
