@@ -22,9 +22,9 @@
     ]
   },
   "eventDetails": [
-    { "icon": "calendar", "label": "Dates", "value": "TBD" },
+    { "icon": "calendar", "label": "Dates", "value": "23rd-26th October" },
     { "icon": "map-pin", "label": "Venue", "value": "JIIT Noida, India" },
-    { "icon": "laptop-2", "label": "Mode", "value": "In-person" },
+    { "icon": "laptop-2", "label": "Mode", "value": "Hybrid" },
     { "icon": "users", "label": "Participants", "value": "Open to all" },
     { "icon": "ticket", "label": "Entry", "value": "Free (Registration Mandatory)" }
   ],

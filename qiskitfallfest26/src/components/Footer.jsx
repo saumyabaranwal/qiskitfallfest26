@@ -65,11 +65,11 @@ function Footer({ data}) {
           <div className="footer-meta">
             <a href={`mailto:${data.contactEmail}`} className="footer-meta-item">
               <Mail size={14} />
-              {data.contactEmail || 'contact@qiskitfallfest.org'}
+              {data.contactEmail || 'dscjiitnoida@gmail.com'}
             </a>
             <span className="footer-meta-item">
               <MapPin size={14} />
-              {data.location || 'In-person Event'}
+              {data.location || 'Jaypee Institute of Information Technology, Noida'}
             </span>
           </div>
         </div>
