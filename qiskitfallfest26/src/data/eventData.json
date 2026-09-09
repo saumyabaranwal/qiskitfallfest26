@@ -29,17 +29,70 @@
     { "icon": "ticket", "label": "Entry", "value": "Free (Registration Mandatory)" }
   ],
   "schedule": {
-    "eyebrow": "SCHEDULE",
-    "heading": "Event Timeline",
-    "slots": [
-      { "time": "09:00 AM", "title": "TBD" },
-      { "time": "10:30 AM", "title": "TBD" },
-      { "time": "01:00 PM", "title": "TBD" },
-      { "time": "02:00 PM", "title": "TBD" },
-      { "time": "03:00 PM", "title": "TBD" },
-      { "time": "05:30 PM", "title": "TBD" }
-    ]
-  },
+  "eyebrow": "SCHEDULE",
+  "heading": "Event Timeline",
+  "days": [
+    {
+      "id": "day1",
+      "label": "Day 1",
+      "date": "23 Oct",
+      "theme": "Discover",
+      "sessions": [
+        { "time": "10:00 AM", "title": "Registration & Networking" },
+        { "time": "10:30 AM", "title": "Opening Session" },
+        { "time": "11:00 AM", "title": "From Bits to Qubits — Speaker Session" },
+        { "time": "12:15 PM", "title": "Beginner Qiskit Workshop" },
+        { "time": "2:15 PM", "title": "Build → Break Lab" },
+        { "time": "3:30 PM", "title": "Quantum Challenge & Day 1 Wrap-up" }
+      ]
+    },
+    {
+      "id": "day2",
+      "label": "Day 2",
+      "date": "24 Oct",
+      "theme": "Build",
+      "sessions": [
+        { "time": "10:00 AM", "title": "Quantum Recap" },
+        { "time": "10:20 AM", "title": "Intermediate Qiskit" },
+        { "time": "11:45 AM", "title": "Quantum Algorithms" },
+        { "time": "1:45 PM", "title": "Guided Mini-Project" },
+        { "time": "3:30 PM", "title": "Quantum Hackathon Introduction" }
+      ]
+    },
+    {
+      "id": "day3",
+      "label": "Day 3",
+      "date": "25 Oct",
+      "theme": "Ideate",
+      "sessions": [
+        { "time": "10:00 AM", "title": "Mini-Project Build & Experiment" },
+        { "time": "11:45 AM", "title": "Mini-Project Extension Challenge" },
+        { "time": "1:45 PM", "title": "Hackathon Kickoff" },
+        { "time": "2:15 PM", "title": "Ideation & Brainstorming" },
+        { "time": "4:00 PM", "title": "Idea Development & Mentoring" },
+        { "time": "5:30 PM", "title": "Idea Submission & Iteration" },
+        { "time": "6:30 PM", "title": "Hackathon — Initial Build" }
+      ]
+    },
+    {
+      "id": "day4",
+      "label": "Day 4",
+      "date": "26 Oct",
+      "theme": "Hack & Showcase",
+      "sessions": [
+        { "time": "10:00 AM", "title": "Open Hackathon Build" },
+        { "time": "1:30 PM", "title": "Progress Checkpoint" },
+        { "time": "2:00 PM", "title": "Final Build & Refinement" },
+        { "time": "3:15 PM", "title": "Quantum Arena — Finalization" },
+        { "time": "5:00 PM", "title": "Final Submission Deadline" },
+        { "time": "5:00 PM", "title": "Quantum Arena Review" },
+        { "time": "5:30 PM", "title": "Featured Quantum Showcase" },
+        { "time": "6:30 PM", "title": "Final Evaluation & Recognition" },
+        { "time": "6:45 PM", "title": "Certificate Distribution & Closing" }
+      ]
+    }
+  ]
+},
   "workshops": {
     "eyebrow": "WORKSHOPS & SESSIONS",
     "heading": "Workshops You Can't Miss",

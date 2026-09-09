@@ -1,25 +1,76 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState, useCallback } from 'react'
+import { createPortal } from 'react-dom'
 import roadImg from '../assets/road-timeline.png'
 import './Schedule.css'
 
-// Positions read off the actual artwork (percentages of image width/height).
-// "ring" = the little marker ring already drawn on the road in the image.
-// "label" = where our text should sit relative to that ring, since some
-// markers (statue, ship) have artwork sitting above the ring already.
-const MARKERS = [
-  { x: 14.0, labelY: 58, side: 'above', custom: false },
-  { x: 33.7, labelY: 34, side: 'above', custom: false },
-  { x: 50.2, labelY: 39, side: 'below', custom: false },
-  { x: 65.0, labelY: 35, side: 'above', custom: true, baseY: 60.7, ringY: 45.7 },
-  { x: 71.6, labelY: 53, side: 'above', custom: false },
-  { x: 89.4, labelY: 64, side: 'below', custom: false },
+const DAY_MARKERS = [
+  { x: 14, y: 58 },
+  { x: 50.2, y: 39 },
+  { x: 71.6, y: 53 },
+  { x: 89.4, y: 58 },
 ]
+
+function DayModal({ day, onClose }) {
+  useEffect(() => {
+    if (!day) return // <-- guard: don't touch body scroll when nothing's open
+
+    const onKey = (e) => {
+      if (e.key === 'Escape') onClose()
+    }
+    document.addEventListener('keydown', onKey)
+    const prevOverflow = document.body.style.overflow
+    document.body.style.overflow = 'hidden'
+    return () => {
+      document.removeEventListener('keydown', onKey)
+      document.body.style.overflow = prevOverflow
+    }
+  }, [day, onClose])
+
+  if (!day) return null
+
+  return createPortal(
+    <div className="schedule-modal-overlay" onClick={onClose}>
+      <div
+        className="schedule-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-label={`${day.label} schedule`}
+        onClick={(e) => e.stopPropagation()}
+      >
+        <div className="schedule-modal-head">
+          <span className="schedule-modal-title">
+            {day.label} · {day.date}
+            {day.theme && <span className="schedule-modal-theme">{day.theme}</span>}
+          </span>
+          <button
+            type="button"
+            className="schedule-modal-close"
+            onClick={onClose}
+            aria-label="Close"
+          >
+            ×
+          </button>
+        </div>
+        <ul className="schedule-modal-sessions">
+          {day.sessions.map((s) => (
+            <li key={s.time + s.title} className="schedule-modal-session">
+              <span className="schedule-modal-time">{s.time}</span>
+              <span className="schedule-modal-session-title">{s.title}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>,
+    document.body
+  )
+}
 
 function Schedule({ data }) {
   const sectionRef = useRef(null)
   const [visible, setVisible] = useState(false)
+  const [openDay, setOpenDay] = useState(null)
 
-  const slots = data.slots || []
+  const days = data.days || []
 
   useEffect(() => {
     const el = sectionRef.current
@@ -39,12 +90,16 @@ function Schedule({ data }) {
     return () => observer.disconnect()
   }, [])
 
+  const closeModal = useCallback(() => setOpenDay(null), [])
+  const activeDay = days.find((d) => d.id === openDay) || null
+
   return (
     <section id="schedule" className="schedule" ref={sectionRef}>
       <div className="container">
         <div className="schedule-header">
           <p className="section-eyebrow">{data.eyebrow}</p>
           <h2 className="section-heading">{data.heading}</h2>
+          <p className="schedule-tagline">Click on a day to view the full schedule</p>
         </div>
       </div>
 
@@ -52,37 +107,26 @@ function Schedule({ data }) {
         <div className="road-wrap">
           <img src={roadImg} alt="Event schedule road illustration" className="road-img" />
 
-          {slots.map((slot, i) => {
-            const marker = MARKERS[i]
-            if (!marker) return null
+          {days.map((day, i) => {
+            const pos = DAY_MARKERS[i]
+            if (!pos) return null
 
             return (
-              <div key={slot.time}>
-                {marker.custom && (
-                  <div
-                    className="road-pin"
-                    style={{ left: `${marker.x}%`, top: `${marker.ringY}%` }}
-                  >
-                    <span
-                      className="road-pin-stick"
-                      style={{ height: `${(marker.baseY - marker.ringY) * 7.24}px` }}
-                    />
-                    <span className="road-pin-ring" />
-                  </div>
-                )}
-
-                <div
-                  className={`road-label road-label-${marker.side} ${visible ? 'road-label-visible' : ''}`}
-                  style={{
-                    left: `${marker.x}%`,
-                    top: `${marker.labelY}%`,
-                    transitionDelay: `${i * 120}ms`,
-                    animationDelay: `${i * 280}ms`,
-                  }}
+              <div
+                key={day.id}
+                className={`road-day ${visible ? 'road-day-visible' : ''}`}
+                style={{ left: `${pos.x}%`, top: `${pos.y}%`, transitionDelay: `${i * 120}ms` }}
+              >
+                <button
+                  type="button"
+                  className="road-day-badge"
+                  onClick={() => setOpenDay(day.id)}
+                  aria-haspopup="dialog"
+                  aria-expanded={openDay === day.id}
                 >
-                  <span className="road-time">{slot.time}</span>
-                  <span className="road-title">{slot.title}</span>
-                </div>
+                  <span className="road-day-label">{day.label}</span>
+                  {day.theme && <span className="road-day-theme">{day.theme}</span>}
+                </button>
               </div>
             )
           })}
@@ -90,6 +134,8 @@ function Schedule({ data }) {
       </div>
 
       <p className="road-scroll-hint">← Swipe to see the full timeline →</p>
+
+      <DayModal day={activeDay} onClose={closeModal} />
     </section>
   )
 }
