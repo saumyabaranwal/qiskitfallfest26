@@ -1,117 +1,288 @@
 {
-  "eventName": "Qiskit Fall Fest 2026",
-  "tagline": "A decade of quantum on the cloud",
-  "heroDescription": "A global celebration of quantum computing and the incredible community building the future. Join workshops, talks, hackathons and more!",
-  "nav": [
-    { "label": "About", "href": "#about" },
-    { "label": "Schedule", "href": "#schedule" },
-    { "label": "Workshops", "href": "#workshops" },
-    { "label": "Register", "href": "#register" }
-  ],
-  "about": {
-    "eyebrow": "About",
-    "heading": "What is Qiskit Fall Fest?",
-    "description": "Qiskit Fall Fest is an annual celebration of quantum computing and the community building it forward. Expect inspiring talks, hands-on workshops, hackathons, and plenty of opportunities to learn, build and connect."
-  },
-  "highlights": {
-    "items": [
-      { "icon": "flask-conical", "title": "Hands-on Learning", "desc": "Explore quantum concepts by building and testing real results." },
-      { "icon": "mic", "title": "Workshops & Talks", "desc": "Interactive sessions and talks from experts and industry leaders." },
-      { "icon": "laptop", "title": "Quantum Experience", "desc": "Experience IBM's actual quantum computers." },
-      { "icon": "users-round", "title": "Community & Networking", "desc": "Meet like-minded people and collaborate on exciting ideas." }
-    ]
-  },
-  "eventDetails": [
-    { "icon": "calendar", "label": "Dates", "value": "23rd-26th October" },
-    { "icon": "map-pin", "label": "Venue", "value": "JIIT Noida, India" },
-    { "icon": "laptop-2", "label": "Mode", "value": "Hybrid" },
-    { "icon": "users", "label": "Participants", "value": "Open to all" },
-    { "icon": "ticket", "label": "Entry", "value": "Free (Registration Mandatory)" }
-  ],
-  "schedule": {
-  "eyebrow": "SCHEDULE",
-  "heading": "Event Timeline",
-  "days": [
-    {
-      "id": "day1",
-      "label": "Day 1",
-      "date": "23 Oct (Offline)",
-      "theme": "Discover",
-      "sessions": [
-        { "time": "10:00 AM", "title": "Registration & Networking" },
-        { "time": "10:30 AM", "title": "Opening Session" },
-        { "time": "11:00 AM", "title": "From Bits to Qubits — Speaker Session" },
-        { "time": "12:15 PM", "title": "Beginner Qiskit Workshop" },
-        { "time": "2:15 PM", "title": "Build → Break Lab" },
-        { "time": "3:30 PM", "title": "Quantum Challenge & Day 1 Wrap-up" }
-      ]
-    },
-    {
-      "id": "day2",
-      "label": "Day 2",
-      "date": "24 Oct (Offline)",
-      "theme": "Build",
-      "sessions": [
-        { "time": "10:00 AM", "title": "Quantum Recap" },
-        { "time": "10:20 AM", "title": "Intermediate Qiskit" },
-        { "time": "11:45 AM", "title": "Quantum Algorithms" },
-        { "time": "1:45 PM", "title": "Guided Mini-Project" },
-        { "time": "3:30 PM", "title": "Quantum Hackathon Introduction" }
-      ]
-    },
-    {
-      "id": "day3",
-      "label": "Day 3",
-      "date": "25 Oct (Online)",
-      "theme": "Ideate",
-      "sessions": [
-        { "time": "10:00 AM", "title": "Mini-Project Build & Experiment" },
-        { "time": "11:45 AM", "title": "Mini-Project Extension Challenge" },
-        { "time": "1:45 PM", "title": "Hackathon Kickoff" },
-        { "time": "2:15 PM", "title": "Ideation & Brainstorming" },
-        { "time": "4:00 PM", "title": "Idea Development & Mentoring" },
-        { "time": "5:30 PM", "title": "Idea Submission & Iteration" },
-        { "time": "6:30 PM", "title": "Hackathon — Initial Build" }
-      ]
-    },
-    {
-      "id": "day4",
-      "label": "Day 4",
-      "date": "26 Oct (Offline)",
-      "theme": "Hack & Showcase",
-      "sessions": [
-        { "time": "10:00 AM", "title": "Open Hackathon Build" },
-        { "time": "1:30 PM", "title": "Progress Checkpoint" },
-        { "time": "2:00 PM", "title": "Final Build & Refinement" },
-        { "time": "3:15 PM", "title": "Quantum Arena — Finalization" },
-        { "time": "5:00 PM", "title": "Final Submission Deadline" },
-        { "time": "5:00 PM", "title": "Quantum Arena Review" },
-        { "time": "5:30 PM", "title": "Featured Quantum Showcase" },
-        { "time": "6:30 PM", "title": "Final Evaluation & Recognition" },
-        { "time": "6:45 PM", "title": "Certificate Distribution & Closing" }
-      ]
-    }
-  ]
+"eventName": "Qiskit Fall Fest 2026",
+"tagline": "Learn → Experiment → Build → Ideate → Hack → Showcase",
+"heroDescription": "Experience quantum computing through Qiskit — learn the fundamentals, build and break quantum circuits, develop your own idea, and turn it into a working quantum solution.",
+"nav": [
+{
+"label": "About",
+"href": "#about"
 },
-  "workshops": {
-    "eyebrow": "WORKSHOPS & SESSIONS",
-    "heading": "Workshops You Can't Miss",
-    "items": [
-      { "title": "Quantum Computing Fundamentals", "difficulty": "Beginner", "desc": "Learn the basics of qubits, superposition, and entanglement with hands-on exercises." },
-      { "title": "Qiskit Programming Workshop", "difficulty": "Intermediate", "desc": "Dive deep into Qiskit programming with practical examples and real quantum hardware access." },
-      { "title": "Quantum Machine Learning", "difficulty": "Intermediate", "desc": "Discover how quantum computing can enhance machine learning algorithms and applications." },
-      { "title": "Quantum Algorithms Deep Dive", "difficulty": "Advanced", "desc": "Explore advanced algorithms like Shor's and Grover's with implementation guidance." },
-      { "title": "Quantum Hardware Lab", "difficulty": "All Levels", "desc": "Get hands-on experience with real quantum processors and learn about hardware limitations." },
-      { "title": "Research Frontiers Panel", "difficulty": "All Levels", "desc": "Join leading researchers discussing the latest breakthroughs in quantum computing." }
-    ]
-  },
-  "register": {
-    "heading": "Be a Part of QFF 2026!",
-    "subtext": "Register now to secure your spot."
-  },
-  "footer": {
-    "title" : "Qiskit Fall Fest 2026 @JIIT Noida",
-    "copyright": "© 2026 IBM Qiskit Fall Fest. All rights reserved.",
-    "madeWith": "Made with love by the Qiskit Community"
-  }
+{
+"label": "Schedule",
+"href": "#schedule"
+},
+{
+"label": "Workshops",
+"href": "#workshops"
+},
+{
+"label": "Register",
+"href": "#register"
+}
+],
+"about": {
+"eyebrow": "About",
+"heading": "Experience Quantum Computing",
+"description": "Qiskit Fall Fest 2026 is designed as a journey from “Can a classical computer solve this?” to “What changes when we think quantum?” Participants learn quantum computing and Qiskit, experiment with guided projects, deliberately break and analyze their circuits, and then apply what they learned to a Quantum Hackathon."
+},
+"highlights": {
+"items": [
+{
+"icon": "flask-conical",
+"title": "Learn & Experiment",
+"desc": "Explore quantum foundations, Qiskit, circuits, superposition, entanglement and interference through hands-on experiments."
+},
+{
+"icon": "laptop",
+"title": "Build → Break → Rebuild",
+"desc": "Modify working quantum circuits, observe what changes, explain the results, and rebuild with a better understanding."
+},
+{
+"icon": "mic",
+"title": "Guided Mini-Project",
+"desc": "Build a complete quantum project with Qiskit, from the problem and classical approach to execution, results and analysis."
+},
+{
+"icon": "users-round",
+"title": "Quantum Hackathon",
+"desc": "Move from independent ideation to team-based development, mentoring, experimentation and a final Quantum Showcase."
+}
+]
+},
+"eventDetails": [
+{
+"icon": "calendar",
+"label": "Dates",
+"value": "23rd–26th October 2026"
+},
+{
+"icon": "map-pin",
+"label": "Venue",
+"value": "JIIT Noida, India"
+},
+{
+"icon": "laptop-2",
+"label": "Mode",
+"value": "Hybrid"
+},
+{
+"icon": "users",
+"label": "Participation",
+"value": "200+ expected"
+},
+{
+"icon": "ticket",
+"label": "Format",
+"value": "Offline + Online"
+}
+],
+"schedule": {
+"eyebrow": "EVENT JOURNEY",
+"heading": "Learn → Build → Ideate → Hack",
+"days": [
+{
+"id": "day1",
+"label": "Day 1",
+"date": "23 Oct (Offline)",
+"theme": "Discover",
+"sessions": [
+{
+"time": "10:00 AM",
+"title": "Registration & Networking"
+},
+{
+"time": "10:30 AM",
+"title": "Opening Session"
+},
+{
+"time": "11:00 AM",
+"title": "From Bits to Qubits — Speaker Session"
+},
+{
+"time": "12:15 PM",
+"title": "Beginner Qiskit Workshop"
+},
+{
+"time": "2:15 PM",
+"title": "Build → Break Lab"
+},
+{
+"time": "3:30 PM",
+"title": "Quantum Challenge & Day 1 Wrap-up"
+}
+]
+},
+{
+"id": "day2",
+"label": "Day 2",
+"date": "24 Oct (Offline)",
+"theme": "Build",
+"sessions": [
+{
+"time": "10:00 AM",
+"title": "Quantum Recap"
+},
+{
+"time": "10:20 AM",
+"title": "Intermediate Qiskit"
+},
+{
+"time": "11:45 AM",
+"title": "Quantum Algorithms"
+},
+{
+"time": "1:45 PM",
+"title": "Guided Mini-Project"
+},
+{
+"time": "3:30 PM",
+"title": "Quantum Hackathon Introduction"
+}
+]
+},
+{
+"id": "day3",
+"label": "Day 3",
+"date": "25 Oct (Online)",
+"theme": "Ideate",
+"sessions": [
+{
+"time": "10:00 AM",
+"title": "Mini-Project Build & Experiment"
+},
+{
+"time": "11:45 AM",
+"title": "Mini-Project Extension Challenge"
+},
+{
+"time": "1:45 PM",
+"title": "Hackathon Kickoff"
+},
+{
+"time": "2:15 PM",
+"title": "Ideation & Brainstorming"
+},
+{
+"time": "4:00 PM",
+"title": "Idea Development & Mentoring"
+},
+{
+"time": "5:30 PM",
+"title": "Idea Submission & Iteration"
+},
+{
+"time": "6:30 PM",
+"title": "Hackathon — Initial Build"
+}
+]
+},
+{
+"id": "day4",
+"label": "Day 4",
+"date": "26 Oct (Offline)",
+"theme": "Hack & Showcase",
+"sessions": [
+{
+"time": "10:00 AM",
+"title": "Open Hackathon Build"
+},
+{
+"time": "1:30 PM",
+"title": "Progress Checkpoint"
+},
+{
+"time": "2:00 PM",
+"title": "Final Build & Refinement"
+},
+{
+"time": "3:15 PM",
+"title": "Quantum Arena — Finalization"
+},
+{
+"time": "5:00 PM",
+"title": "Final Submission Deadline"
+},
+{
+"time": "5:00 PM",
+"title": "Quantum Arena Review"
+},
+{
+"time": "5:30 PM",
+"title": "Featured Quantum Showcase"
+},
+{
+"time": "6:30 PM",
+"title": "Final Evaluation & Recognition"
+},
+{
+"time": "6:45 PM",
+"title": "Certificate Distribution & Closing"
+}
+]
+}
+],
+"tagline": "Click on a day to view the full schedule"
+},
+"workshops": {
+"eyebrow": "WORKSHOPS & SESSIONS",
+"heading": "Learn, Build & Experiment",
+"items": [
+{
+"title": "Beginner Qiskit Workshop",
+"difficulty": "Beginner",
+"desc": "Learn qubits, quantum states, gates, superposition, measurement and quantum circuits, then run your first Qiskit experiments."
+},
+{
+"title": "Build → Break Lab",
+"difficulty": "Beginner",
+"desc": "Modify working quantum circuits, predict outcomes, execute them, compare results and reason about why the behavior changed."
+},
+{
+"title": "Intermediate Qiskit",
+"difficulty": "Intermediate",
+"desc": "Explore multi-qubit systems, controlled operations, CNOT gates, entanglement, Bell states and quantum correlations."
+},
+{
+"title": "Quantum Algorithms",
+"difficulty": "Intermediate",
+"desc": "Explore classical search and Grover’s Search Algorithm through oracles, amplitude amplification, interference and Qiskit implementation."
+},
+{
+"title": "Guided Mini-Project",
+"difficulty": "Intermediate",
+"desc": "Follow a complete quantum project from problem and classical approach to quantum algorithm, Qiskit circuit, execution, results and rebuild."
+},
+{
+"title": "Ideation & Mentoring",
+"difficulty": "All Levels",
+"desc": "Develop a hackathon idea around a problem, quantum opportunity and Qiskit solution with mentor guidance on feasibility and scope."
+}
+]
+},
+"register": {
+"eyebrow": "JOIN THE EXPERIENCE",
+"heading": "Be Part of Qiskit Fall Fest 2026",
+"subtext": "Join the four-day journey from learning quantum fundamentals to building, experimenting, ideating and showcasing a Qiskit-based solution.",
+"price": "Registration",
+"priceNote": "23rd–26th October 2026 · Hybrid Event",
+"perks": [
+{
+"label": "Hands-on Qiskit experiments",
+"icon": "flask"
+},
+{
+"label": "Guided quantum project",
+"icon": "bolt"
+},
+{
+"label": "Quantum Hackathon experience",
+"icon": "users"
+}
+]
+},
+"footer": {
+"title": "Qiskit Fall Fest 2026 @ JIIT Noida",
+"copyright": "© 2026 IBM Qiskit Fall Fest. All rights reserved.",
+"madeWith": "Learn → Experiment → Build → Ideate → Hack → Showcase"
+}
 }
