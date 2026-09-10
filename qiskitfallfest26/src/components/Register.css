@@ -133,3 +133,55 @@
     max-width: 100%;
   }
 }
+@media (max-width: 640px) {
+  .register {
+    padding: 56px 0;
+  }
+
+  .register-inner {
+    gap: 24px;
+  }
+
+  .register-heading {
+    font-size: 1.5rem;
+  }
+
+  .register-card {
+    padding: 28px 24px;
+  }
+
+  .register-price {
+    font-size: 2.2rem;
+  }
+
+  .register-perks {
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+
+  .register-perks li {
+    font-size: 0.95rem;
+  }
+
+  .register-media img {
+    transform: scale(1.1); /* 1.25 crops too aggressively once the image itself is smaller */
+  }
+
+  .register-media img:hover {
+    transform: scale(1.14);
+  }
+}
+
+@media (max-width: 400px) {
+  .register-card {
+    padding: 22px 18px;
+  }
+
+  .register-price {
+    font-size: 1.9rem;
+  }
+
+  .register-btn {
+    padding: 12px 20px;
+  }
+}
