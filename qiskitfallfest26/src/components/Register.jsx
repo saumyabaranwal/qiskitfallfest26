@@ -1,7 +1,7 @@
 import './Register.css'
 import eventImg from '../assets/event_img.png'
 
-const REGISTER_FORM_URL = 'https://forms.gle/your-form-id-here'
+const REGISTER_FORM_URL = 'https://forms.gle/FP2Ai1rXz1q9ZuGS6'
 
 const perkIcons = {
   flask: (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M9 3v6l-5 9a2 2 0 0 0 1.75 3h12.5A2 2 0 0 0 20 18l-5-9V3" /><path d="M8 3h8M8 13h8" /></svg>),
